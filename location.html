@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="author" content="y._.hyuk">
+    <meta name="description" content="포트폴리오, 인생네컷 모바일 사이즈 클론코딩">
+    <title>인생네컷</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./meta_img/favicon32.png">
+    <link rel="apple-touch-icon=precomposed" href="./meta_img/favicon144.png">
+    <!-- 기본 코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/system_font.css">
+    <link rel="stylesheet" href="./css/apple_mobile.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <!-- <link rel="stylesheet" href="./css/apple_development_done000.css"> -->
+    <!-- 기본 코딩 JS 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+</head>
+<body>
+    <header class="header">
+            <!-- Hamburger -->
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon" class="ham">
+                <span></span>
+                <span></span>
+            </label>
+            <!-- /Hamburger -->
+            <!--  Mobile GNB =햄버거 클릭시 나오는 -->
+            <nav class="mobile_gnb">
+                <ul class="gnb_head"></ul>
+                <div class="login">
+                    <h2><a href="#">
+                        <p>로그인이 필요합니다</p>
+                        <p>로그인</p>
+                    </a></h2>
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#" class="sub_gnb_btn">
+                            <p>이벤트</p>
+                            <img src="./images/icon/down.png" alt="down">
+                        </a>
+                        <div class="sub_menu_box">
+                            <div class="sub_menu"><a href="#">진행중인 이벤트</a></div>
+                            <div class="sub_menu"><a href="#">종료된 이벤트</a></div>
+                            <div class="sub_menu"><a href="#">공지사항</a></div>
+                            <div class="sub_menu"><a href="#">언론보도</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="sub_gnb_btn">
+                            <p>굿즈샵</p>
+                            <img src="./images/icon/down.png" alt="down">
+                        </a>
+                        <div class="sub_menu_box">
+                            <div class="sub_menu"><a href="#">인생네컷 앨범</a></div>
+                            <div class="sub_menu"><a href="#">카카오프렌즈 포토그립톡</a></div>
+                            <div class="sub_menu"><a href="#">인생네컷 x 최고심</a></div>
+                            <div class="sub_menu"><a href="#">인생네컷 x 잔망루피</a></div>
+                            <div class="sub_menu"><a href="#">인생네컷 x 디즈니</a></div>
+                            <div class="sub_menu"><a href="#">인생네컷 굿즈</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="sub_gnb_btn">
+                            <p>네컷갤러리</p>
+                            <img src="./images/icon/down.png" alt="down">
+                        </a>
+                        <div class="sub_menu_box">
+                            <div class="sub_menu"><a href="#">NEW</a></div>
+                            <div class="sub_menu"><a href="#">Multi</a></div>
+                            <div class="sub_menu"><a href="#">디즈니</a></div>
+                            <div class="sub_menu"><a href="#">잔망루피</a></div>
+                            <div class="sub_menu"><a href="#">도구리</a></div>
+                            <div class="sub_menu"><a href="#">카카오프렌즈</a></div>
+                            <div class="sub_menu"><a href="#">콩순이 & 시크릿쥬쥬</a></div>
+                            <div class="sub_menu"><a href="#">작가전</a></div>
+                            <div class="sub_menu"><a href="#">쿵야</a></div>
+                            <div class="sub_menu"><a href="#">라인프렌즈</a></div>
+                            <div class="sub_menu"><a href="#">미니니</a></div>
+                            <div class="sub_menu"><a href="#">BT21</a></div>
+                            <div class="sub_menu"><a href="#">쿠키런</a></div>
+                            <div class="sub_menu"><a href="#">메이플스토리</a></div>
+                            <div class="sub_menu"><a href="#">포켓몬스터</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./location.html" class="sub_gnb_btn">
+                            <p>매장안내</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Mobile GNB -->
+            <!-- Logo -->
+            <h1 class="logo">
+                <a href="#"><img src="./images/lifefourcuts/lifefourcuts_logo.png" alt="Logo"></a>
+            </h1>
+            <!-- Logo -->
+            <!-- 장바구니 -->
+            <div class="head_icon">
+                <h2 class="no_ml"><a href="#"><img src="./images/lifefourcuts//icon/big-handbag.png" alt="handbag" ></a></h2>
+                <h2><a href="#"><img src="./images/lifefourcuts//icon/search-interface-symbol.png" alt="search" ></a></h2>
+            </div>
+            <!-- 장바구니 -->    
+    </header>
+    <script src="./js/load.js"></script>
+</body>
+</html>

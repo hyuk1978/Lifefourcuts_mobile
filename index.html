@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <meta name="author" content="y._.hyuk">
+    <meta name="description" content="포트폴리오, 인생네컷 모바일 사이즈 클론코딩">
+    <title>인생네컷</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="./meta_img/favicon32.png">
+    <link rel="apple-touch-icon=precomposed" href="./meta_img/favicon144.png">
+    <!-- 기본 코딩 CSS 파일 -->
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/notosans_kr_CDN.css">
+    <link rel="stylesheet" href="./css/display_none_scrollbar.css">
+    <link rel="stylesheet" href="./css/font.css">
+    <link rel="stylesheet" href="./css/system_font.css">
+    <link rel="stylesheet" href="./css/apple_mobile.css">
+    <link rel="stylesheet" href="./css/jquery.bxslider.css">
+    <!-- <link rel="stylesheet" href="./css/apple_development_done000.css"> -->
+    <!-- 기본 코딩 JS 파일 -->
+    <script src="./js/jquery-1.12.4.min.js"></script>
+    <script src="./js/jquery-3.3.1.min.js"></script>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/prefixfree.min.js"></script>
+    <script src="./js/jquery.bxslider.js"></script>
+</head>
+<body>
+    <div id="wrap"> 
+        <!-- Header -->
+        <header>
+            <!-- Hamburger -->
+            <input type="checkbox" id="menuicon">
+            <label for="menuicon" class="ham">
+                <span></span>
+                <span></span>
+            </label>
+            <!-- /Hamburger -->
+            <!--  Mobile GNB =햄버거 클릭시 나오는 -->
+            <nav class="mobile_gnb">
+                <ul class="gnb_head"></ul>
+                <div class="login">
+                    <h2><a href="#">
+                        <p>로그인이 필요합니다</p>
+                        <p>로그인</p>
+                    </a></h2>
+                </div>
+                <ul class="gnb">
+                    <li>
+                        <a href="#" class="sub_gnb_btn">
+                            <p>이벤트</p>
+                            <img src="./images/icon/down.png" alt="down">
+                        </a>
+                        <div class="sub_menu_box">
+                            <div class="sub_menu"><a href="#">진행중인 이벤트</a></div>
+                            <div class="sub_menu"><a href="#">종료된 이벤트</a></div>
+                            <div class="sub_menu"><a href="#">공지사항</a></div>
+                            <div class="sub_menu"><a href="#">언론보도</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="sub_gnb_btn">
+                            <p>굿즈샵</p>
+                            <img src="./images/icon/down.png" alt="down">
+                        </a>
+                        <div class="sub_menu_box">
+                            <div class="sub_menu"><a href="#">인생네컷 앨범</a></div>
+                            <div class="sub_menu"><a href="#">카카오프렌즈 포토그립톡</a></div>
+                            <div class="sub_menu"><a href="#">인생네컷 x 최고심</a></div>
+                            <div class="sub_menu"><a href="#">인생네컷 x 잔망루피</a></div>
+                            <div class="sub_menu"><a href="#">인생네컷 x 디즈니</a></div>
+                            <div class="sub_menu"><a href="#">인생네컷 굿즈</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="#" class="sub_gnb_btn">
+                            <p>네컷갤러리</p>
+                            <img src="./images/icon/down.png" alt="down">
+                        </a>
+                        <div class="sub_menu_box">
+                            <div class="sub_menu"><a href="#">NEW</a></div>
+                            <div class="sub_menu"><a href="#">Multi</a></div>
+                            <div class="sub_menu"><a href="#">디즈니</a></div>
+                            <div class="sub_menu"><a href="#">잔망루피</a></div>
+                            <div class="sub_menu"><a href="#">도구리</a></div>
+                            <div class="sub_menu"><a href="#">카카오프렌즈</a></div>
+                            <div class="sub_menu"><a href="#">콩순이 & 시크릿쥬쥬</a></div>
+                            <div class="sub_menu"><a href="#">작가전</a></div>
+                            <div class="sub_menu"><a href="#">쿵야</a></div>
+                            <div class="sub_menu"><a href="#">라인프렌즈</a></div>
+                            <div class="sub_menu"><a href="#">미니니</a></div>
+                            <div class="sub_menu"><a href="#">BT21</a></div>
+                            <div class="sub_menu"><a href="#">쿠키런</a></div>
+                            <div class="sub_menu"><a href="#">메이플스토리</a></div>
+                            <div class="sub_menu"><a href="#">포켓몬스터</a></div>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./location.html" class="sub_gnb_btn">
+                            <p>매장안내</p>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- Mobile GNB -->
+            <!-- Logo -->
+            <h1 class="logo">
+                <a href="#"><img src="./images/lifefourcuts/lifefourcuts_logo.png" alt="Logo"></a>
+            </h1>
+            <!-- Logo -->
+            <!-- 장바구니 -->
+            <div class="head_icon">
+                <h2 class="no_ml"><a href="#"><img src="./images/lifefourcuts//icon/big-handbag.png" alt="handbag" ></a></h2>
+                <h2><a href="#"><img src="./images/lifefourcuts//icon/search-interface-symbol.png" alt="search" ></a></h2>
+            </div>
+            <!-- 장바구니 -->
+        </header>
+        <!-- /Header -->
+        <article class="slider">
+            <div id="gallery_wrap">
+                <ul class="slide_gallery">
+                    <li><img src="./images/lifefourcuts/2381bbd99aefd.png" alt=""></li>
+                    <li><img src="./images/lifefourcuts/c6a3f34b3348c.png" alt=""></li>
+                </ul>
+            </div>  
+        </article>
+        <!-- Main -->
+        <main role="main">
+            <section class="link_btn">
+                <div class="link_btn_img">
+                    <a href="#"><img src="./images/lifefourcuts/button/btn1.png" alt="btn1"></a>
+                    <a href="#"><img src="./images/lifefourcuts/button/btn2.png" alt="btn2"></a>
+                    <a href="#"><img src="./images/lifefourcuts/button/btn3.png" alt="btn3"></a>
+                    <a href="#"><img src="./images/lifefourcuts/button/btn4.png" alt="btn4"></a>
+                </div>
+            </section>
+            <!-- disney -->
+            <section class="disney">
+                <h2>디즈니 프레임</h2>
+                <article class="disney_slider">
+                    <div id="gallery_wrap">
+                        <ul class="slide_disney">
+                            <li>
+                                <img src="./images/lifefourcuts/disney/disney1.jpg" alt="">
+                                <img src="./images/lifefourcuts/disney/disney2.jpg" alt="">
+                                <img src="./images/lifefourcuts/disney/disney3.jpg" alt="">
+                            </li>
+                            <li>
+                                <img src="./images/lifefourcuts/disney/disney4.jpg" alt="">
+                                <img src="./images/lifefourcuts/disney/disney5.jpg" alt="">
+                                <img src="./images/lifefourcuts/disney/disney6.jpg" alt="">
+                            </li>
+                        </ul>
+                    </div>  
+                </article>
+            </section>
+            <!-- /disney -->
+            <!-- life4cuts contents -->
+            <section class="lifefourcuts_contents">
+                <h2>Life4Cuts Contents</h2>
+                <h3>- APP Ready With Me -</h3>
+                <article class="cuts_mov">
+                    <div class="mov_container">
+                        <a href="#">
+                            <img src="./images/lifefourcuts/cuts_mov/1630f71fc7c68.jpg" alt="">
+                            <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                            <p>
+                                인생네컷 어플이면 되돌릴 수 있다! 네 폰에 담긴 인생어플! <br>
+                                (커플편)
+                            </p>
+                        </a>
+                    </div>
+                    <div class="mov_container no_pl">
+                        <a href="#">
+                            <img src="./images/lifefourcuts/cuts_mov/7dd146052e3da.jpg" alt="">
+                            <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                            <p>인생네컷 어플출시!! 네 폰에 담긴 싱생어플! (어플맨편)</p>
+                        </a>
+                    </div>
+                </article>
+            </section>
+            <!-- /life4cuts contents -->
+            <!-- MBTI -->
+            <section class="lifefourcuts_mbti">
+                <h3>- MBTI 별 인생네컷 -</h3>
+                <article class="mbti_slider">
+                    <div id="gallery_wrap">
+                        <ul class="slide_mbti">
+                            <li>
+                                <div class="mbti_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/mbti/enfp.jpg" alt="enfp">
+                                        <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                                        <p>혼자 놀기 달인 도전! 행복한 ENFP (엔프피)</p>
+                                    </a>
+                                </div>
+                                <div class="mbti_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/mbti/infp.jpg" alt="infp" class="no_pl">
+                                        <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                                        <p>전학가서 잘 지낼 수 있을까...😥 INFP의 전학일기</p>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="mbti_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/mbti/isfp.png" alt="isfp">
+                                        <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                                        <P>썸탈땐 인생네컷😘 섬세한 ISFP의 연애기 💐!</P>
+                                    </a>
+                                </div>s
+                                <div class="mbti_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/mbti/entj.jpg" alt="entj">
+                                        <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                                        <p>나를 따르라! 대담한 네컷 고수 ENTJ 인생네컷 찍기!</p>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </article>
+            </section>
+            <!-- /MBTI -->
+            <!-- 추천 포즈 -->
+            <section class="lifefourcuts_pose">
+                <h3>- 인생네컷 포즈 추천 -</h3>
+                <article class="pose_slider">
+                    <div id="gallery_wrap">
+                        <ul class="slide_pose">
+                            <li>
+                                <a href="#">
+                                    <div class="pose_box bg1">
+                                        <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                                    </div>
+                                </a>
+                                <a href="#" class="no_pr">
+                                    <div class="pose_box bg2">
+                                        <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pose_box bg3">
+                                        <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                                    </div>
+                                </a>
+                                <a href="#" class="no_pr">
+                                    <div class="pose_box bg4">
+                                        <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                                    </div>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <div class="pose_box bg5">
+                                        <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                                    </div>
+                                </a>
+                                <a href="#" class="no_pr">
+                                    <div class="pose_box bg6">
+                                        <img src="./images/lifefourcuts/play_icon.png" alt="play_btn" class="play_btn">
+                                    </div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>  
+                </article>
+            </section>
+            <section class="lifefourcuts_goods">
+                <h2>인생네컷 굿즈샵</h2>
+                <article class="goods_slider">
+                    <div id="gallery_wrap">
+                        <ul class="slide_goods">
+                            <li>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/ae534c4eb92f9.jpg" alt="콜렉트북">
+                                        <p>인생네컷 x 최고심 콜렉트북 L</p>
+                                        <h5>18.000원</h5>
+                                    </a>
+                                </div>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/album_black.jpg" alt="앨범_블랙">
+                                        <p>인생네컷 굿즈 바인더 앨범 블랙</p>
+                                        <h5>18.000원</h5>
+                                        <button>BEST</button>
+                                    </a>
+                                </div>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/album_pink.jpg" alt="앨범_핑크">
+                                        <p>인생네컷 굿즈 바인더 앨범 핑크</p>
+                                        <h5>18.000원</h5>
+                                        <button>BEST</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/3f64cf14a3e34.jpg" alt="포켓 앨범">
+                                        <p>인생네컷 포켓 파일 앨범</p>
+                                        <h5>4.000원</h5>
+                                    </a>
+                                </div>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/82599fd5750dc.jpg" alt="바인더 앨범 속지">
+                                        <p>인생네컷 바인더 앨범 속지</p>
+                                        <h5>2.500원</h5>
+                                    </a>
+                                </div>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/8b0d531075da8.jpg" alt="추억 러브장 앨범">
+                                        <p>인생네컷 굿즈 추억 러브장 앨범 시즌2</p>
+                                        <h5>7.700원</h5>
+                                        <button>BEST</button>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/fa7497c1a0ffb.jpg" alt="포토앨범 블랙문">
+                                        <p>인생네컷 굿즈 포토앨범 블랙문</p>
+                                        <h5>13.200원</h5>
+                                    </a>
+                                </div>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/2940881d53d37.jpg" alt="인생네컷 - 블루 메모리">
+                                        <p>인생네컷 스티커 - 블루메모리 </p>
+                                        <h5>2.000원</h5>
+                                    </a>
+                                </div>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/02a27f1895f24.jpg" alt="인생네컷 굿즈 포토앨범 모던 와인">
+                                        <p>인생네컷 굿즈 포토앨범 모던 와인</p>
+                                        <h5>13.200원</h5>
+                                    </a>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/dd575721118b6.jpg" alt="굿즈 홀로그램 / 투명 파우치">
+                                        <p>인생네컷 굿즈 홀로그램 / 투명 파우치 네컷지값 사진앨범 ver.02</p>
+                                        <h5>5.500원</h5>
+                                    </a>
+                                </div>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/d7332596cabb9.jpg" alt="인생네컷 굿즈 디즈니 앨범 미키">
+                                        <p>인생네컷 굿즈 디즈니 앨범 미키 </p>
+                                        <h5>16.900원</h5>
+                                    </a>
+                                </div>
+                                <div class="goods_box">
+                                    <a href="#">
+                                        <img src="./images/lifefourcuts/goods/19b60de8921e4.jpg" alt="카카오프렌즈 포토그립톡 - 라이온">
+                                        <p>카카오프렌트 포토그립톡 - 라이언</p>
+                                        <h5>23.500원</h5>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>  
+                </article>
+            </section>
+            <section class="lifefourcuts_insta">
+                <h2>@life4cut</h2>
+                <div class="instaImgBox">
+                    <a href="#">
+                        <img src="./images/lifefourcuts/insta/356258732_790152789153843_2663657936513461421_n.jpg" alt="img1">
+                    </a>
+                    <a href="#">
+                        <img src="./images/lifefourcuts/insta/356218815_830526605427120_8708139142080794329_n.jpg" alt="img2">
+                    </a>
+                    <a href="#">
+                        <img src="./images/lifefourcuts/insta/356269071_603765145285452_3327148931097066017_n.jpg" alt="img3">
+                    </a>
+                    <a href="#">
+                        <img src="./images/lifefourcuts/insta/355143710_651871526969094_4703314401041553751_n.jpg" alt="img4">
+                    </a>
+                    <a href="#">
+                        <img src="./images/lifefourcuts/insta/355834840_653722720117308_7692159354762111497_n.jpg" alt="img5">
+                    </a>
+                    <a href="#">
+                        <img src="./images/lifefourcuts/insta/355704052_653718600117720_2884332374139969889_n.jpg" alt="img6">
+                    </a>
+                </div>
+            </section>
+        </main>
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer_container">
+                <ul>
+                    <li><a href="#">광고<span>·</span>제휴</a></li>
+                    <li><a href="#">행사<span>·</span>임대</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">개인정보처리방침</a></li>
+                </ul>
+            </div>
+            <h1><img src="./images/lifefourcuts/logo-w.png" alt=""></h1>
+            <p>주식회사 엘케이벤쳐스 <span></span> 대표 : 이호익 <span></span> 사업자등록번호 : 415-88-00869 [사업자번호조회] <span></span> 통신판매신고번호 : 2021-서울마포-0888</p>
+            <p>개인정보관리자 : 조윤정 <span></span> 전라남도 목포시 영산로 93-1, 5층 570호</p>
+            <p><span class="no_pl"></span> 팩스번호 : 0303-3130-7970 <span></span> 창업문의 : life4cut@life4cut.com <span></span> 제휴 및 행사 문의 : brand@life4cut.com</p>
+            <p>창업문의·소모품주문 : [서울·경기] 1833-7970 <span></span> [중부지사] 1855-3431 <span></span> [강원지사] 010-8604-0902 <span></span> [남부지사] 070-7954-9096</p>
+            <p class="copy">Copyright &copy; 2023 인생네컷 All rights reserved.</p>
+            <div class="sns">
+                <i class="fa fa-instagram"></i>
+                <i class="fa fa-youtube"></i>
+                <i class="fa fa-facebook"></i>
+                <i class="fa fa-twitter"></i>
+            </div>
+        </footer>
+        <!-- /Footer -->
+    </div>
+    <script src="./js/apple_mobile.js"></script>
+</body>
+</html>

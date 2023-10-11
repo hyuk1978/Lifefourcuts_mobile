@@ -1,0 +1,22 @@
+@charset "utf-8";
+html,body{
+    background-color: #cbcdcf;
+}
+#wrap {
+    width: 1920px;
+    height: 960px;
+    background-image: url(../images/mockup2.png);
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: contain;
+    position: relative;
+}
+#load {
+    width: 360px !important;
+    height: 656px !important;
+    position: relative;
+    top: 116px;
+    left: 493px;
+    z-index: 9999;
+    border-radius: 10px;
+}
