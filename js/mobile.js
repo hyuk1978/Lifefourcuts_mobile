@@ -1,5 +1,3 @@
-// Footer 2depth 스크립트
-// const PlusBtn = $(".footer_title");
 const PlusBtn = document.querySelectorAll(".footer_title");
 
 console.log(PlusBtn);
@@ -24,23 +22,17 @@ $('a[href="#"').click(function(e){
 // 슬라이드 효과
 $(function(){
     $('.slide_gallery').bxSlider({
-        // mode: 'fade',
         pager: true,
-        // slideWidth: 1920,
     });
 });
 $(function(){
     $('.slide_disney').bxSlider({
-        // mode: 'fade',
         pager: true,
-        // slideWidth: 1920,
     });
 });
 $(function(){
     $('.slide_mbti').bxSlider({
-        // mode: 'fade',
         pager: true,
-        // slideWidth: 1920,
     });
 });
 $(function(){
@@ -78,19 +70,3 @@ function setPoseBoxHeight() {
   
   window.addEventListener('resize', setPoseBoxHeight); // 브라우저 크기 변경 시 높이 업데이트
 
-
-// 서브메뉴
-$('.sub_gnb_btn').click(function(){
-    if($(this).hasClass('active')){
-        $(this).removeClass('show');
-        $(this).removeClass('active');
-        $(this).siblings('.sub_menu_box').slideUp('fast');
-        $(this).children('img').attr('src', './images/icon/down.png');
-    }else{
-        $(this).addClass('show');
-        $(this).addClass('active');
-        $(this).siblings('.sub_menu_box').slideDown('fast');
-        $(this).children('img').attr('src', './images/icon/up-arrow.png');
-
-    }
-})

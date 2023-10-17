@@ -1,3 +1,2 @@
-$('#load').load('./index.html');
-
-$(".header").load('./include/header.html');
+$('.load').load('./index.html');
+// $('#load').load('./index.html') 

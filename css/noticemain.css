@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+.notice_board {
+
+}
+.notice_board ul li:first-child {
+    padding: 10px 7px;
+    border-top: 1px solid;
+    border-bottom: 1px solid ;
+    border-color: rgba(33,33,33,0.15);
+}
+.notice_board ul li:first-child ~ li {
+    padding: 10px 7px;
+    border-bottom: 1px solid ;
+    border-color: rgba(33,33,33,0.15);
+}
+.notice_board ul li a{
+    line-height: 1.5;
+}
+.notice_board ul li a h2 {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #212121;
+}
+.notice_board ul li a span {
+    color: #979899;
+}
